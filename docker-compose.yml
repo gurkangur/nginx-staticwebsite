@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+   web-server-1:
+      build: ./web-server-1
+      ports:
+         - "8001:80"
+      volumes: 
+         - ./app:/app
